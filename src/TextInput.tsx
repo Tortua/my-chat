@@ -12,7 +12,7 @@ export interface TextInputOptions {
 
 export class TextInput extends Component<TextInputOptions>
 {
-    state = { value: this.props.value, focus: false };
+    state = { value: this.props.value, focus: this.props.autofocus};
     render()
     {
         let attrs = {} as any;
